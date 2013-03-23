@@ -8,7 +8,7 @@ pkgname = pkg.__name__
 setuptools.setup(
     name=pkgname,
     version=pkg.__version__,
-    packages=[pkgname],
+    packages=setuptools.find_packages(),
     install_requires=[
         'sphinx'
         ],
@@ -17,6 +17,7 @@ setuptools.setup(
     url='https://github.com/shomah4a/sphinx-gist-embed',
     description='''embedding gist to sphinx''',
     long_description=pkg.__doc__,
+    namespace_packages=['sphinxcontrib'],
     classifiers='''
 Programming Language :: Python
 Development Status :: 4 - Beta

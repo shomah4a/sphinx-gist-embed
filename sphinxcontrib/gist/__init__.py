@@ -8,7 +8,7 @@ First of all, add `sphinx_gist_embed` to sphinx extension list in conf.py
 
 .. code-block:: python
 
-   extensions = ['sphinx_gist_embed']
+   extensions = ['sphinxcontrib.gist']
 
 
 then use `gist` directive.
