@@ -12,7 +12,7 @@ class gist(nodes.General, nodes.Element):
 
 def visit(self, node):
 
-    tag = u'''<script src="{0}.js"></script>'''.format(node.url)
+    tag = u'''<script src="{0}.js">&nbsp;</script>'''.format(node.url)
 
     self.body.append(tag)
 
