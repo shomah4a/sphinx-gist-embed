@@ -1,7 +1,7 @@
 #-*- coding:utf-8 -*-
 
 import setuptools
-import sphinx_gist_embed as pkg
+from sphinxcontrib import gist as pkg
 
 pkgname = pkg.__name__
 
